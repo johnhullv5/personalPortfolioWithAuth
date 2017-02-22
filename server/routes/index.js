@@ -32,8 +32,30 @@ function requireAuth(req, res, next) {
 
 
 /* GET home page. */
-router.get('/', (req, res, next) =>{
+router.get('/', requireAuth,passport.authenticate('local', {
+  successRedirect: '/',
+  failureRedirect: '/about',
+  failureFlash: 'bad login'
+}),(req, res, next) =>{
   res.render('content/index');
+});
+
+
+// GET /login - render the login view
+router.get('/login', (req, res, next)=>{
+  // check to see if the user is not already logged in
+  if(!req.user) {
+    // render the login page
+    res.render('auth/login', {
+      title: "Login",
+      
+      messages: req.flash('loginMessage'),
+      displayName: req.user ? req.user.displayName : ''
+    });
+    return;
+  } else {
+    return res.redirect('/about'); // redirect to games list
+  }
 });
 
 
