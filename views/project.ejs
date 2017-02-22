@@ -1,0 +1,65 @@
+  <header>
+        <% include partials/header/head.ejs %>
+    </header>
+<body>
+  <div>
+  <div>
+  <nav class="navbar navbar-inverse" role="navigation" style="padding-left:130px;">
+         <ul class="nav navbar-nav">
+        <li><a href="/">Home</a></li>
+        <li ><a href="/about">About</a></li>
+        <li><a href="/service">Service</a></li>
+         <li class="active"><a href="/project">Project<span class="sr-only">(current)</span></a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+</nav>
+</div>
+  <br/>
+  <div class="jumbotron">
+
+      <div class="container">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-md-4">
+          <h2>Intelligent Stock picker</h2>
+          <p>back-end module used for online broker app for a Canadian hedge fund,which can select particular stocks based on certain indicators.</p>
+           <div class="code-wrapper">
+          <img class="code" src="Assets/images/code.PNG" />
+            </div>
+          <p><a class="btn btn-default" href="https://github.com/johnhullv5/stock" role="button">View github</a></p>
+        </div>
+        <div class="col-md-4">
+          <h2>CloudTrader</h2>
+          <p>full automative trading system used by a quantitative hedge fund, including high-frequency trading module and long/short traidng strategy.</p>
+           <div class="img-wrapper">
+    <img class="trading1_project" src="Assets/images/trading1.jpg" />
+    </div>
+    <br>
+         
+          <p><a class="btn btn-default" href="/trading" role="button">View details &raquo;</a></p>
+
+         
+            
+  
+  
+       </div>
+        <div class="col-md-4">
+          <h2>space shot game</h2>
+          <p>2D adventure game developed by TypeScript.</p>
+          <br>
+          <br>
+            <div class="game-wrapper">
+          <img class="game" src="Assets/images/game.PNG" />
+            </div>
+             <br>
+          <p><a class="btn btn-default" href="http://spaceshot.azurewebsites.net/" role="button">play!</a></p>
+         
+        </div>
+      </div>
+</div>
+  </div>
+   <footer>
+        <% include partials/footer/foot.ejs %>
+    </footer>
+</body>
+</html>
