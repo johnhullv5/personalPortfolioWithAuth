@@ -71,7 +71,7 @@ app.use(passport.session());
 
 // route redirects
 app.use('/', index);
-app.use('/userinfos', userinfos);
+//app.use('/userinfos', userinfos);
 
 // Passport User Configuration
 let UserModel = require('./models/users');
