@@ -1,9 +1,9 @@
 #!/usr/bin/env node
 
 /*
- * Copyright 2017 (C) <Centennial College> COMP308-assign1
+ * Copyright 2017 (C) <Centennial College> COMP308-assign2
  * 
- * Created on : 10-02-2017
+ * Created on : 21-02-2017
  * Author     : Hao Jiang (300858525)
  *
  *-----------------------------------------------------------------------------
@@ -16,8 +16,8 @@
  * Module dependencies.
  */
 
-var app = require('./app');
-var debug = require('debug')('personalportfolio:server');
+var app = require('./server/app');
+var debug = require('debug')('personalPortfolioWithAuth:server');
 var http = require('http');
 
 /**
