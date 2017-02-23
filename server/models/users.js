@@ -37,6 +37,7 @@ let UserSchema = new Schema({
     default: Date.now
   }
 },{
+  //here define the collections in db, is case sensitive
   collection: "users"
 });
 
