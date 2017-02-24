@@ -69,22 +69,22 @@ router.get('/about', (req, res, next) =>{
 
 /* GET contact page. */
 router.get('/contact', (req, res, next) =>{
-  res.render('content/contact');
+  res.render('content/contact',{ title: 'Contact' });
 });
 
 /* GET project page. */
 router.get('/project', (req, res, next) =>{
-  res.render('content/project');
+  res.render('content/project',{ title: 'Project' });
 });
 
 /* GET about page. */
 router.get('/service', (req, res, next) =>{
-  res.render('content/service');
+  res.render('content/service',{ title: 'Service' });
 });
 
 /* GET about page. */
 router.get('/trading', (req, res, next) =>{
-  res.render('content/tradingResult');
+  res.render('content/tradingResult',{ title: 'Trading' });
 });
 
 

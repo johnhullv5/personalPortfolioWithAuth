@@ -3,6 +3,7 @@
 <script src="https://use.fontawesome.com/27d05c6f09.js"></script>
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
 <link rel="stylesheet" href="/Content/style.css">
+<title><%= title %></title>
 
 <style>
  #pic div {
@@ -14,3 +15,63 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 </head>
+
+<body>
+<div>
+  <nav class="navbar navbar-inverse" role="navigation" style="padding-left:130px;">
+         <ul class="nav navbar-nav navbar-right">
+          <% if(title == "Home") { %>
+        <li class="active"><a href="/"><i class="fa fa-home fa-lg"></i>Home</a></li>
+         <% } else { %>
+          <li><a href="/"><i class="fa fa-home fa-lg"></i> Home</a></li>
+        <% } %>
+         
+
+            <% if(title == "About") { %>
+        <li class="active"><a href="/about">About</a></li>
+          <% } else { %>
+          <li ><a href="/about">About</a></li>
+           <% } %>
+
+
+                      <% if(title == "Service") { %>
+        <li class="active"><a href="/service">Service</a></li>
+        <% } else { %>
+          <li><a href="/service">Service</a></li>
+          <% } %>
+
+
+          <% if(title == "Project") { %>
+         <li class="active"><a href="/project">Project</a></li>
+          <% } else { %>
+           <li ><a href="/project">Project</a></li>
+            <% } %>
+
+
+            <% if(title == "Contact") { %>
+        <li class="active"><a href="/contact"><i class="fa fa-phone fa-lg"></i>Contact</a></li>
+         <% } else { %>
+           <li><a href="/contact"><i class="fa fa-phone fa-lg"></i>Contact</a></li>
+            <% } %>
+
+                        <% if(title == "BusinessArea") { %>
+         <li><a class="active" href="/contacts">BusinessArea</a></li>
+          <% } else { %>
+            <li><a  href="/contacts">BusinessArea</a></li>
+              <% } %>
+	
+
+
+
+      </ul>
+
+
+
+
+
+
+
+
+</nav>
+</div>
+  <br/>
