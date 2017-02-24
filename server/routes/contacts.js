@@ -22,7 +22,7 @@ function requireAuth(req, res, next) {
 /* GET contacts List page. READ */
 router.get('/', requireAuth,(req, res, next) => {
   // find all contacts in the contacts collection
-  contact.find((err, contacts) => {
+  contact.find({},null,{sort: {'contactname':1}},(err, contacts) => {
     if (err) {
       console.log("???")
       return console.error(err);
