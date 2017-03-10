@@ -102,9 +102,9 @@ router.post('/:id', requireAuth, (req, res, next) => {
 
      let updatedContact = contact({
        "_id": id,
-      "contactname": req.body.name,
-      "contactnumber": req.body.cost,
-      "contactemail": req.body.rating
+      "contactname": req.body.contactname,
+      "contactnumber": req.body.contactnumber,
+      "contactemail": req.body.contactemail
     });
 
     contact.update({_id: id}, updatedContact, (err) => {
