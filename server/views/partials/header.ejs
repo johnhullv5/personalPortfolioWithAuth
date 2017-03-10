@@ -54,11 +54,25 @@
            <li><a href="/contact"><i class="fa fa-phone fa-lg"></i>Contact</a></li>
             <% } %>
 
+
+ <!-- hide the business area bar for non-login users -->
+             <% if(typeof displayName == 'string' && displayName) { %>
+
                         <% if(title == "BusinessArea") { %>
          <li><a class="active" href="/contacts">BusinessArea</a></li>
           <% } else { %>
             <li><a  href="/contacts">BusinessArea</a></li>
               <% } %>
+
+                <% } %>
+
+                 <!-- this session is for login and login out functions-->
+          <% if(typeof displayName == 'string' && displayName) { %>
+          <li class="navbar-text"><i class="fa fa-user"></i> Welcome, <%= displayName %></li>
+          <li><a href="/logout"><i class="fa fa-sign-out"></i> Logout</a></li>
+        <% } else { %>
+          <li><a href="/login"><i class="fa fa-sign-in"></i> Login</a></li>
+        <% } %>
 	
 
 

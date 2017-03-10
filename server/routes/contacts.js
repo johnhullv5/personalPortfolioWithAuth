@@ -1,3 +1,14 @@
+/*
+ * Copyright 2017 (C) <Centennial College> COMP308-assign1
+ * 
+ * Created on : 10-02-2017
+ * Author     : Hao Jiang (300858525)
+ * File Name  : contacts.js
+ * web app Name   : mypersonalPortfolio  
+ *-----------------------------------------------------------------------------
+ * Revision History (Release 1.0.0.0)
+ *-----------------------------------------------------------------------------
+ */
 let express = require('express');
 let router = express.Router();
 let mongoose = require('mongoose');

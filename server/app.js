@@ -3,7 +3,8 @@
  * 
  * Created on : 10-02-2017
  * Author     : Hao Jiang (300858525)
- *
+ * File Name  : app.js  //main entry point
+ * web app Name   : mypersonalPortfolio  
  *-----------------------------------------------------------------------------
  * Revision History (Release 1.0.0.0)
  *-----------------------------------------------------------------------------
